@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Task 4</title>
+    <link
+      rel="stylesheet"
+      href="css/common.css"
+    />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <div class="movie-form">
+      <h1>Add a New Movie</h1>
+
+      <form id="movie-form">
+        <!-- Movie Name -->
+        <label for="name">Movie Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter movie name"
+          required
+        />
+
+        <!-- Genre -->
+        <label for="genre">Genre:</label>
+        <input
+          type="text"
+          id="genre"
+          name="genre"
+          placeholder="Enter genre"
+          required
+        />
+
+        <!-- Release Year -->
+        <label for="releaseYear">Release Year:</label>
+        <input
+          type="number"
+          id="releaseYear"
+          name="releaseYear"
+          placeholder="Enter release year"
+          required
+        />
+        <label for="director">Director:</label>
+        <input
+          type="text"
+          id="director"
+          name="director"
+          placeholder="Enter director's name"
+        />
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          placeholder="Enter movie description"
+        ></textarea>
+        <button type="submit">Add Movie</button>
+      </form>
+    </div>
+    <h2>Filter Movies</h2>
+
+    <select id="yearDropdown">
+      <option value="">Select Year</option>
+    </select>
+    <input
+      type="text"
+      id="nameInput"
+      placeholder="Search by movie name..."
+    />
+
+    <div id="movie-container"></div>
+
+    <script
+      src="js/task-04.js"
+      type="module"
+    ></script>
+  </body>
+</html>
