@@ -69,7 +69,7 @@ function filterMoviesByYear(year, moviesList) {
 
 function filterMoviesByName(name, moviesList) {
   if (!name) {
-    return moviesList; // Если имя не введено, возвращаем все фильмы
+    return moviesList;
   }
   return moviesList.filter((movie) =>
     movie.name.toLowerCase().includes(name.toLowerCase())
